@@ -1,0 +1,1719 @@
+p {
+    color: red;
+    font-size: 20px;
+}
+
+< !--2 задача-->* {
+    margin: 0;
+    padding: 0;
+}
+
+< !--3 задача-->* {
+    color: red;
+}
+
+li {
+    list-style: none;
+    color: green;
+}
+
+< !--4 задача-->li {
+    list-style: none;
+    color: green;
+}
+
+.rule {
+    list-style: upper-roman;
+    color: navy;
+}
+
+< !--5 задача-->.common-rule {
+    list-style: upper-roman;
+    font-size: 20px;
+}
+
+.first-rule {
+    color: red;
+}
+
+.last-rule {
+    color: green;
+}
+
+< !--6 задача-->.btn {
+    border: none;
+    padding: 0.25rem 1.25rem;
+}
+
+.link {
+    text-decoration: none;
+    color: navy;
+}
+
+/* Напиши свой код под этой строкой */
+.btn.active {
+    color: red;
+}
+
+.link.active {
+    font-weight: 700;
+}
+
+< !--7 задача-->.link {
+    text-decoration: none;
+    color: navy;
+    opacity: 0.5;
+}
+
+/* Напиши свой код под этой строкой */
+.link:focus,
+.link:hover {
+    opacity: 1;
+}
+
+< !--8 задача-->[type] {
+    color: white;
+}
+
+button[type="reset"] {
+    color: green;
+}
+
+< !--9 задача-->.link {
+    text-decoration: none;
+}
+
+[href^="./"] {
+    color: red;
+}
+
+[href^="https"] {
+    color: navy;
+}
+< !--10 задача-->
+
+.link {
+    text-decoration: none;
+}
+[href$="html"] {
+    color: green;
+}
+[href$="css"] {
+    color: orangered;
+}
+< !--11 задача-->
+.link {
+    text-decoration: none;
+}
+[href*="about"] {
+    color: green;
+}
+[href*="com"] {
+    color: orangered;
+}
+< !--12 задача-->
+
+.warning {
+  background-color: white;
+  color: red;
+}
+#sending {background-color: teal;
+color: white;}
+< !--13 задача-->
+
+<div class="warning"id="inline"style="background-color: orange; color: navy">Инлайн стили нежелательно использовать из-за более высокого приоритета чем у id,
+а также из-за сложности c поддержкой и повторным использованием кода.</div>
+< !--14 задача-->
+
+div {
+    background-color: navy !important;
+    color: white !important;
+}
+.warning {
+    background-color: white;
+    color: red;
+}
+#inline {
+    background-color: red;
+    color: white;
+}
+< !--15 задача-->
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+.menu>.menu-item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+< !--16 задача-->
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+.menu>.menu-item {
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1;
+}
+.sub-menu .menu-item {
+    opacity: 0;
+    margin-left: 100px;
+}
+.menu-item:hover .menu-item {
+    opacity: 1;
+}
+< !--17 задача-->
+
+.item-1+.item {
+    color: red;
+}
+< !--18 задача-->
+
+.item-2~.item {
+    color: red;
+}
+< !--19 задача-->
+
+.headline.title {
+    color: navy;
+}
+
+.title[title] {
+    color: maroon;
+}
+< !--20 задача-->
+
+.cards {
+    color: navy;
+}
+
+.last-of-type {
+    color: firebrick;
+}
+< !--21 задача-->
+
+.list {
+    padding-left: 0;
+    list-style: none;
+    color: green;
+}
+.list-link {
+    color: green;
+}
+< !--22 задача-->
+
+< !DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+< !-- Пишите ваш код ниже -->
+<link href="css/modern-normalize.css"rel="stylesheet"/>
+<link href="css/style.css"rel="stylesheet"/>
+< !-- Пишите ваш код выше -->
+</head><body></body></html>
+< !--23 задача-->
+
+.box {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.red {
+    background-color: rgb(255, 0, 0);
+
+}
+.green {
+    background-color: rgb(0, 255, 0);
+
+}
+.blue {
+    background-color: rgb(0, 0, 255)
+}
+< !--24 задача-->
+
+.box {
+    color: #fff;
+    background-color: #000;
+}
+.red {
+    background-color: #f00;
+}
+.green {
+    background-color: #0f0;
+}
+.blue {
+    background-color: #00f;
+}
+< !--25 задача-->
+
+.lightness {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0.5rem;
+    text-align: center;
+    border: 1px solid gold;
+}
+.lightness-100 {
+    background-color: hsl(0, 100%, 100%);
+}
+.lightness-75 {
+    background-color: hsl(0, 100%, 75%);
+}
+.lightness-50 {
+    background-color: hsl(0, 100%, 50%);
+}
+.lightness-25 {
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(0, 100%, 25%);
+}
+.lightness-0 {
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(0, 100%, 0%);
+}
+< !--26 задача-->
+
+/* Напиши код под этой строкой */
+.opacity:hover,
+.opacity:focus {
+    opacity: 1;
+}
+.transparent:hover,
+.transparent:focus {
+    background-color: transparent;
+}
+< !--27 задача-->
+
+[data-color] {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: #008;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+[data-color="rgba"]:hover {
+    background-color: rgba(0, 0, 136, .5);
+}
+
+
+[data-color="hsla"]:hover {
+    background-color: hsla(240, 100%, 27%, .5);
+}
+
+
+[data-color="hexa"]:hover {
+    background-color: #00008a80;
+}
+< !--28 задача-->
+
+.boxes,
+.cards,
+.letter {
+    font-size: 36px;
+    height: 100px;
+    padding: 1rem;
+    background-color: goldenrod;
+    margin-bottom: 1rem;
+}
+.box-48 {
+    font-size: 48px;
+}
+.box-72 {
+    font-size: 72px;
+}
+.card {
+    height: 36px;
+    width: 18px;
+}
+.card-48 {
+    height: 48px;
+    width: 36px;
+}
+.card-72 {
+    height: 72px;
+    width: 48px;
+}
+
+/* Напиши код под этой строкой */
+.box,
+.card {
+    display: inline-block;
+    background-color: blueviolet;
+    vertical-align: top;
+}
+.letter::first-letter {
+    font-size: 72px;
+    vertical-align: top;
+}
+< !--5/2 задача-->
+
+vertical-align: middle;
+< !--6/2 задача-->
+
+vertical-align: bottom;
+< !--7/2 задача-->
+
+[data-transform="none"] {
+    text-transform: none;
+}
+[data-transform="uppercase"] {
+    text-transform: uppercase;
+}
+[data-transform="lowercase"] {
+    text-transform: lowercase;
+}
+[data-transform="capitalize"] {
+    text-transform: capitalize;
+}
+< !--8/2 задача-->
+
+body {
+    font-size: 36px;
+    padding: 1rem;
+}
+/* Напиши код под этой строкой */
+.up {
+   text-decoration: overline wavy red;
+}
+.through {
+    text-decoration: line-through dashed green;
+}
+.down {
+    text-decoration: underline solid blue;
+}
+.no {
+    text-decoration: none;
+}
+.combi {
+    text-decoration: underline overline double grey;
+}
+< !--9/2 задача-->
+
+body {
+    font-family: sans-serif;
+    font-size: 36px;
+    padding: 1rem;
+}
+
+/*  offset-x | offset-y | blur-radius | color  */
+.one {
+    color: blue;
+    text-decoration: underline wavy;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 2px hsla(0, 0%, 0%, .5);
+}
+
+.rings {
+    color: orange;
+    text-shadow: -15px -8px 0 blue,
+        14px -8px 0 black,
+        29px 0 0 green,
+        44px -8px 0 red;
+}
+< !--10/2 задача-->
+
+.items {
+    word-spacing: 1rem;
+}
+/*  Напиши код под этой строкой */
+.item-less {
+    word-spacing: -.25rem;
+}
+.item-normal {
+    word-spacing: normal;
+}
+< !--11/2 задача-->
+
+.items {
+    letter-spacing: .25rem;
+}
+/*  Напиши код под этой строкой */
+.item-less {
+    letter-spacing: -.1rem;
+}
+.item-normal {
+    letter-spacing: normal;
+}
+< !--12/2 задача-->
+
+
+/* 3 MODULE */
+.parent {
+    background: teal;
+    margin-bottom: 1rem;
+}
+.child {
+    background: salmon;
+    width: 50%;
+}
+/* 1 */
+
+.parent {
+    background: teal;
+    margin-bottom: 1rem;
+}
+.child {
+    width: 2%;
+    background: salmon;
+    min-width: 200px;
+}
+/* 2 */
+
+.parent {
+    background: teal;
+    margin-bottom: 1rem;
+}
+
+.child {
+    width: 90%;
+    background: salmon;
+    max-width: 200px;
+}
+/* 3 */
+
+.parent {
+  background: teal;
+  min-height: 30px;
+  margin-bottom: 1rem;
+}
+
+.child {
+  background: salmon;
+}
+/* 4 */
+
+.parent {
+  width: 200px;
+  min-height: 150px;
+  background-color: teal;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.child {
+  min-height: 150px;
+  background-color: goldenrod;
+  }
+  /* 6 */
+
+  .parent {
+  width: 200px;
+  height: 300px;
+  background-color: teal;
+  box-sizing: border-box;
+}
+
+.child {
+  border: 1px solid #fff;
+  background-color: goldenrod;
+  width: 50%;
+  height: 50%;
+  padding-left: 10%;
+  margin-top: 20%;
+}
+
+.inner {
+  background: red;
+  height: 100%;
+}
+/* 7 */
+
+border-top: 1px solid transparent;
+/* 8 */
+
+.parent {
+  width: 200px;
+  height: 300px;
+  background-color: teal;
+  box-sizing: border-box;
+  padding-top: 40px;
+  margin-bottom: 20px;  
+}
+
+.child {
+  width: 50%;
+  height: 50%;
+  border: 1px solid #fff;
+    margin-left: auto;
+  margin-right: auto;
+  background-color: goldenrod;
+}
+/* 9 */
+
+body {
+  font-size: 20px;
+}
+/* 
+  ширина container 360  
+  или 4 раза по 90  
+*/
+.container {
+  width: 360px;
+  margin: auto;
+  padding-top: 15px;
+  background: burlywood;
+  font-size: 0;
+}
+
+/* 
+  ширина box 15 + 60 + 15
+  или 90  
+*/
+.box {
+  width: 60px;
+  margin: 0 15px 15px;
+  height: 75px;
+  line-height: 75px;
+  background-color: teal;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+/* 10 */
+
+margin: 0 15px 15px;
+/* 11 */
+
+body {
+  font-size: 20px;
+}
+
+/* 
+  2 * 15 - это размер, 
+  который box-sizing: border-box 
+  отнял у width и height
+
+  ширина container 480  - (2 * 15)
+  или 3 раза по 160 - (2 * 15)  
+*/
+.container {
+  width: 480px;
+  margin: auto;
+  padding: 15px;
+  background: burlywood;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  ширина box x + 130 + x
+  или 160  
+  за исключением крайних элементов
+*/
+.box {
+  width: 130px;
+  margin: 0 15px 15px;
+  height: 75px;
+  line-height: 75px;
+  background-color: teal;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.box:nth-of-type(3n + 1) {
+  margin-left: 0;
+}
+
+.box:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.box:nth-last-of-type(-n + 3) {
+  margin-bottom: 0;
+}
+/* 12 */
+
+.item {margin-bottom: 10px;
+}
+
+body {
+  font-size: 20px;
+}
+
+/* 
+  2 * 15 - это размер, 
+  который box-sizing: border-box 
+  отнял у width и height
+
+  ширина container 480  - (2 * 15)
+  или 3 раза по 160 - (2 * 15)  
+*/
+.container {
+  width: 480px;
+  margin: auto;
+  padding: 15px;
+  background: burlywood;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 130px;
+  min-height: 75px;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 1/2 */
+
+justify-content: space-around;
+/* 2/2 */
+
+body {
+  font-size: 20px;
+}
+
+.container {
+  width: 480px;
+  margin: auto;
+  padding: 15px 15px 0;
+  background: burlywood;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 130px;
+  min-height: 75px;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+/* 3/3 */
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  padding: 15px;
+  background: burlywood;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu_link {
+  margin: 0 15px;
+}
+/* 4/4 */
+
+.box-left {margin-right: auto;
+/* 5/5 */
+
+
+/* 4 module */
+.container {
+  max-width: 200px;
+  height: 240px;
+  margin: auto;
+  background-color: hsla(0, 0%, 0%, 0.1);
+  background-image: url(https://ac.goit.global/img/photo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* 1 */
+
+.container {
+  max-width: 200px;
+  height: 240px;
+  margin: auto;
+  background-image: url("https://ac.goit.global/img/photo.jpg");
+  background-color: hsla(0, 0%, 0%, 0.1);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* 2 */
+
+.container-fluid {
+  height: 200px;
+  background-image: url("https://ac.goit.global/img/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 480px;
+  height: 100%;
+  margin: auto;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background-color: hsla(0, 0%, 0%, 0.1);
+}
+/* 3 */
+
+}
+[data-clip="padding-box"] {background-clip: padding-box;
+}
+[data-clip="content-box"] {background-clip: content-box;
+}
+[data-clip="text"] {-webkit-background-clip: text;
+background-clip: text;
+}
+/* 4 */
+
+.container {
+  display: flex;
+  padding-top: 15px;
+}
+.wrp-image {
+  width: 240px;
+  border: 1px solid gold;
+  margin: 0 15px 15px;
+} 
+.images {display: block;
+width: 100%;}
+/* 5 */
+
+.container {
+  display: flex;
+  padding-top: 15px;
+}
+.images {
+  width: 240px;
+  height: 320px;
+  object-fit: cover;
+  border: 1px solid gold;
+  margin: 0 15px 15px;
+  
+}
+/* 6 */
+
+.cite::before {
+    content: "\275D";
+}
+.cite::after {
+    content: "\275E";
+}
+/* 7 */
+
+body { 
+  min-height: 100vh;
+  background: linear-gradient(
+      -45deg,
+      hsl(0, 100%, 30%) , 
+      hsl(270, 100%, 30%) 75%
+    );
+  }
+  /* 8 */
+
+  body {
+  min-height: 100vh;
+  background: 
+    repeating-linear-gradient(
+      #bbb 1px, transparent 2px, transparent 28px),
+       repeating-linear-gradient(
+      90deg, #bbb 1px, transparent 2px, transparent 28px);
+}
+/* 9 */
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 1px 1px 1px 1px hsla(0,0%,0%,.3);
+}
+
+.btn:active {
+  box-shadow: inset 3px 3px 3px 3px hsla(0,0%,0%,.3);
+}
+/* 10 */
+
+div {
+  color: green;
+  background-color: #eee;
+  font-size: 24px;
+}
+
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+
+}
+
+div:hover {
+  color: orangered;
+  }
+  /* 1/3 */
+
+  .comment {
+  text-decoration: none;
+  color: green;
+  font-family: sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.comment-icon {
+  margin-right: 0.5rem;
+  --icon-color: currentColor;
+}
+.comment:hover {
+  color: orangered;
+}
+/* 2/3 */
+
+:root {
+  --primary: burlywood;
+  --accent: cadetblue;
+}
+.items {
+  list-style: none;
+  display: flex;
+}
+.item {
+  margin: 0.25rem;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--accent);
+}
+.icon {
+--icon-color: currentColor;
+}
+.item:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+/* 3/3 */
+
+
+/* 5 module */
+.container {
+  width: 480px;
+  height: 240px;
+  margin: 1rem auto;
+  background: 
+  /* верхний фон */
+  linear-gradient(26.3deg, 
+  /* черный прозрачностью .2 */
+    hsla(0, 0%, 0%, .2), 
+    hsla(0, 0%, 0%, .2) 50%, 
+    transparent 50%, 
+    transparent),
+    /* нижний фон */
+  linear-gradient(153.3deg,
+    teal, 
+    teal 50%, 
+    slategray 50%, 
+    slategray);
+    position: relative;
+}
+
+.box {
+  --size: 50px;
+  width: var(--size);
+  height: var(--size);
+  background-color: orange;
+  display: flex;
+  /* Напиши код под этой строкой */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+
+/*
+  центрируем элемент при
+  родителе под flex
+ */
+span {
+  margin: auto;
+}
+/* 1 */
+
+.by-position {
+  background-color: palevioletred;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+  }
+.by-margin {
+  background-color: lightskyblue;
+  margin-top: 2rem;
+  margin-right: 2rem;
+
+}
+/* 2 */
+
+.by-position {
+  background-color: palevioletred;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+}
+.by-margin {
+  background-color: lightskyblue;
+  margin: 2rem;
+}
+/* 3 */
+
+header {
+  position: fixed;
+  width: 100%;
+
+  height: 6rem;
+  padding: 1rem;
+  background: hsl(189, 100%, 96%);
+}
+main {
+  padding-top: 6rem;
+
+}
+/* 4 */
+
+.box {
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  width: 360px;
+  height: 200px;
+  background-color: #fff;
+  cursor: initial;
+/* Добавь свойство под этой строкой */
+margin: auto;
+}
+
+.btn,
+.box {
+  cursor: pointer;
+}
+
+.modal {
+  cursor: not-allowed;
+/* Измени код под этой строкой */
+  display: flex;
+  background-color: hsla(0, 0%, 0%, .5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* 5 */
+
+position: sticky;
+top: 40px;
+/* 6 */
+
+top: 0;
+width: 100%;
+/* 7 */
+
+.inner {
+  margin: auto;
+  --s: 30px;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  background-color: orange;
+  z-index: 100;
+}
+
+.alfa {
+  background-color: crimson;
+  top:30px;
+  left: 5px;
+  z-index: 30;
+}
+.beta {
+  background-color: slateblue;
+  left: 25px;
+  z-index: 20;
+}
+.gamma {
+  top:30px;
+  left: 45px;
+  background-color: mediumseagreen;
+  z-index: 10;
+}
+/* 8 */
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/* 1/5 */
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.box {
+  display: inline-block;
+  --r: 90px;
+  width: var(--r);
+  height: var(--r);
+  border-radius: 50%;
+  background: crimson;
+  cursor: pointer;
+/* Измени код под этой строкой */
+  transition: .8s all ease;
+}
+
+.box:hover {
+  border-radius: 0;
+  background: slateblue;
+}
+/* 2/5 */
+
+.text {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #f38181;
+}
+.effect {
+  position: relative;
+}
+.effect::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  background: #f38181;
+  transition: width 0.5s, left 0.5s;
+}
+
+.effect:hover::after {
+  width: 100%;
+  left: 0;
+}
+/* 3/5 */
+
+.fadeInFromLeft,
+.fadeInFromRight  {
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-delay: 500ms;
+}
+/* 4/5 */
+
+.box {
+  display: inline-block;
+  --r: 90px;
+  width: var(--r);
+  height: var(--r);
+  border-radius: 50%;
+  background: crimson;
+  cursor: pointer;
+  /* Напиши код под этой строкой */
+animation: cursorMoveIn 0.8s forwards;
+}
+
+.box:hover {
+  animation: cursorMoveOut 0.8s forwards;  
+}
+/* 5/5 */
+
+/* 6 module */
+<input type="text" name="login" placeholder="Enter login:"/>
+/* 1/1 */
+
+<label><span>Login</span>
+  <input type="text" name="login" placeholder=" " />
+  </label>
+  /* 2/1 */
+
+  <form autocomplete="off" method="POST" action="javascript:void(0);">
+<label>
+  <span>Login</span>
+  <input type="text" name="login" placeholder=" " />
+</label>
+<label>
+  <span>Password</span>
+  <input type="password" name="password" placeholder=" " />
+</label>
+<button type="submit">Submit</button>
+</form>
+  /* 3/1 */
+
+  <form autocomplete="off" method="POST" action="javascript:void(0);">
+  <label for="id-comment">Comment</label>
+  <textarea id="id-comment" name="comment" placeholder="Share your opinion:"></textarea>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+/* 4/1 */
+
+<div class="container">
+  <section>
+    <h4>Choose only one value</h4>
+    <form action="javascript:void(0);" id="id-radio">
+      <div>
+        <label for="id-red">red</label>
+        <label for="id-green">green</label>
+        <label for="id-blue">blue</label>
+        <label for="id-black">black</label>
+      </div>
+      <div>
+        <input id="id-red" name="colors" type="radio" value="red" />
+        <input id="id-green" name="colors" type="radio" value="green" checked/>
+        <input id="id-blue" name="colors" type="radio" value="blue" />
+        <input id="id-black" name="colors" type="radio" value="black" disabled/>
+      </div>
+    </form>
+    <button form="id-radio" type="submit">Submit</button>
+    <button form="id-radio" type="reset">Reset</button>
+  </section>
+  <section>
+    <h4>Choose multiple values</h4>
+    <form action="javascript:void(0);" id="id-checkbox">
+      <div>
+        <label for="red">red</label>
+        <label for="green">green</label>
+        <label for="blue">blue</label>
+        <label for="black">black</label>
+      </div>
+      <div>
+        <input id="red" name="colors" type="checkbox" value="red" />
+        <input id="green" name="colors" type="checkbox" value="green" checked/>
+        <input id="blue" name="colors" type="checkbox" value="blue" />
+        <input id="black" name="colors" type="checkbox" value="black" disabled/>
+      </div>
+    </form>
+    <button form="id-checkbox" type="submit">Submit</button>
+    <button form="id-checkbox" type="reset">Reset</button>
+  </section>
+</div>
+/* 5/1 */
+
+<form action="javascript:void(0);">
+    <select>
+        <optgroup label="Developer">
+            <option value="frontend">Frontend</option>
+        </optgroup>
+            
+        <optgroup label="Base skills">
+            <option value="html" selected>HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </optgroup>
+            
+        <optgroup label="Frameworks" disabled>
+            <option value="vue">Vue</option>
+            <option value="react">React + GraphQL</option>
+            <option value="angular">Angular</option>
+        </optgroup>
+                                    
+    </select>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+/* 6/1 */
+
+<form action="javascript:void(0);">
+    <label for="myBrowser">Browser selection</label>
+    <input list="browsers" id="myBrowser" name="myBrowser" />
+    <datalist id="browsers">
+        <option>Chrome</option>
+        <option>Firefox</option>
+        <option>Internet Explorer</option>
+        <option>Opera</option>
+        <option>Safari</option>
+        <option>Microsoft Edge</option>
+    </datalist>
+</form>
+/* 7/1 */
+
+.hidden {
+-moz-appearance: none; -webkit-appearance: none; appearance: none;
+}
+/* 1/2  */
+
+/* module 7.1 */
+<!-- Что это? Шапка страницы/page-header -->
+<header class="page-header">page-header</header>
+<!-- Что это? Контейнер/container -->
+<main class="container">
+    <!-- Что это? Заголовок/title -->
+    <h2 class="title">title</h2>
+    <!-- Какой? С большими буквами/big-letters -->
+
+    <!-- Что это? Статья о БЭМ/bem-article -->
+    <article class="bem-article">
+        <!-- Какой? Светлый заголовок/header-light -->
+
+        <!-- Какой? Темный низ/footer-dark -->
+
+    </article>
+</main>
+<!-- Что это? Низ страницы/page-footer -->
+<footer class="page-footer">page-footer</footer>
+/* 1 */
+
+<form class="authentication"
+      autocomplete="off"
+      method="POST"
+      action="javascript:void(0);"
+>
+    <label class="authentication__label">
+        <span class="authentication__title">Login</span>
+        <input class="authentication__input"
+               type="text"
+               name="login"
+               placeholder=" "/>
+    </label>
+    <label class="authentication__label">
+        <span class="authentication__title">Password</span>
+        <input class="authentication__input"
+               type="password"
+               name="password"
+               placeholder=" "/>
+    </label>
+    <button class="authentication__btn"
+            type="submit">
+            Submit
+    </button>
+</form>
+/* 2 */
+
+<form class="authentication"
+      autocomplete="off"
+      method="POST"
+      action="javascript:void(0);"
+>
+    <label class="authentication__label">
+        <span class="authentication__title">Login</span>
+        <input class="authentication__input"
+               type="text"
+               name="login"
+               placeholder=" "/>
+    </label>
+    <label class="authentication__label">
+        <span class="authentication__title">Password</span>
+        <input class="authentication__input"
+               type="password"
+               name="password"
+               placeholder=" "/>
+    </label>
+    <button class="authentication__btn"
+            type="submit">
+            Submit
+    </button>
+</form>
+
+/* 3 */
+
+<form class="authentication authentication--focused"
+      autocomplete="off"
+      method="POST"
+      action="javascript:void(0);"
+>
+    <label class="authentication__label">
+        <span class="authentication__title">Login</span>
+        <input class="authentication__input"
+               type="text"
+               name="login"
+               placeholder=" "/>
+    </label>
+    <label class="authentication__label">
+        <span class="authentication__title">Password</span>
+        <input class="authentication__input"
+               type="password"
+               name="password"
+               placeholder=" "/>
+    </label>
+    <button class="authentication__btn authentication__btn--focused"
+            type="submit">
+            Submit
+    </button>
+</form>
+/* 4 */
+
+<button class="btn btn--focused authentication__btn"
+            type="submit">
+            Submit
+    </button>
+    /* 5 */
+
+/* 7.2 module */
+/* palette */
+$blue: #6610f2;
+$lightBlue: #007bff; 
+$white: #fff;
+
+.btn {
+  padding: .25rem 1.75rem;
+  color: $white;
+  background-color: $lightBlue;
+  border: $blue;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $blue;
+}
+/* 1/2 */
+
+/* Измени код под этой строкой */
+$diameter: 80px;
+  width: $diameter;
+  height: $diameter;
+}
+/* 2/2 */
+
+/* Добавь код под этой строкой */
+@extend .circle;
+}
+/* 3/2 */
+
+/* palette */
+$blue: #6610f2;
+$lightBlue: #007bff;
+$white: #fff;
+
+/* Измени код под этой строкой */
+%circle {
+  $diameter: 80px;
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  color: $white;
+  background-color: $lightBlue;
+  border: #6610f2;
+  cursor: pointer;
+/* Добавь код под этой строкой */
+@extend %circle;
+}
+/* 4/2 */
+
+/* palette */
+$blue: #6610f2;
+$lightBlue: #007bff;
+$white: #fff;
+
+/* Измени код под этой строкой */
+@mixin circle($diameter) {
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  color: $white;
+  background-color: $lightBlue;
+  border: #6610f2;
+  cursor: pointer;
+/* Измени код под этой строкой */
+  @include circle(100px);
+}
+
+.up:hover,
+.up:focus {
+  background-color: $blue;
+}
+/* 5/2 */
+
+label {
+    span {
+        color: #888;
+    }
+}
+
+label:focus-within {
+    span {
+    color: green;
+    }
+}
+/* 6/2 */
+
+label {
+  span {
+    color: #888;
+  }
+  &:focus-within {
+    span {
+      color: green;
+    }
+  }
+}
+/* 7/2 */
+
+body {
+  text-align: center;
+}
+
+$rgb: (
+  'red': #f00,
+  'green': #080,
+  'blue': #00f,
+);
+
+label[for="id-red"] {
+  color: map-get($rgb, 'red')
+}
+
+label[for="id-green"] {
+color: map-get($rgb, 'green')
+}
+
+label[for="id-blue"] {
+color: map-get($rgb, 'blue')
+}
+/* 8/2 */
+
+@mixin center ($width, $height) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  top: 50%;
+  left: 50%;
+  margin-top: $height / -2;
+  margin-left: $width / -2;
+
+}
+
+.box {
+  background: gold;
+  @include center(100px, 50px);
+}
+/* 9/2 */
+
+@import 'normalizer';
+@import 'variables';
+@import 'header';
+/* 10/2 */
+
+/* 8 module */
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 2vmax 2vmin;
+  font-size: calc(.8rem + 2vmax);
+  background: slateblue;
+  color: #fff;
+}
+/* 1 */
+
+* {
+ margin: 0;
+ padding: 0;
+}
+.full-width {
+  width: 100vw;
+  height: calc(100vw * 9 / 21);
+}
+/* 2/2 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: teal;
+}
+
+@media screen and (min-width: 550px) {
+  body {
+   background-color: slateblue;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    background-color: coral;
+  }
+}
+/* 3 */
+
+@media screen and (min-width: 960px) {
+  .container {
+    width: calc(960px - 20px);
+    background-color: beige;
+  }
+}
+/* 4 */
+
+@media screen and (min-width: 550px) {
+  .container-fluid {
+    background-color: slateblue;
+  }
+  .container {
+    max-width: 550px;
+    background-color: lavender;
+  }
+}
+@media screen and (min-width: 960px) {
+  .container {
+    max-width: 960px;
+    background-color: beige;
+  }
+}
+/* 5 */
+
+body {
+  background-color: crimson;
+}
+
+@media screen and (min-width: 360px) {
+body {
+  background-color: slateblue;
+}
+}
+
+@media screen and (min-width: 580px) {
+body {
+  background-color: moccasin;
+}
+}
+/* 6 */
+
+  .card {
+    margin: 0 15px 15px;
+   /* Напиши код под этой строкой */
+  min-width: var(--tablet);
+  }
+  }
+}
+@media screen and (min-width: 580px) {
+  .card {
+   /* Напиши код под этой строкой */
+  min-width: var(--desktop);
+  }
+}
+/* 7 */
+
+/* 8.2 module */
+/* 1x - значение по умолчанию, изображение 360x220 */
+.card {
+  width: 324px;
+  height: 198px;
+  margin: 1rem auto;
+  box-shadow: 20px 10px 20px hsla(0, 0%, 0%, 0.5);
+  background-image: url('https://ac.goit.global/img/bg@1x.jpg'),
+    linear-gradient(#eee, #888);
+  background-size: cover;
+}
+
+/* 2x-экраны, изображение 720x440 */
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .card {
+    background-image: url('https://ac.goit.global/img/bg@2x.jpg'),
+      linear-gradient(#eee, #888);
+  }
+}
+
+/* 3x-экраны, изображение 1080x660 */
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .card {
+    background-image: url('https://ac.goit.global/img/bg@3x.jpg'),
+      linear-gradient(#eee, #888);
+  }
+}
+/* 1 */
+
+<img
+  src="https://ac.goit.global/img/source@1x.jpg"
+  alt="Image description for all versions"
+  srcset="https://ac.goit.global/img/source@1.5x.jpg 1.5x,
+    https://ac.goit.global/img/source@2x.jpg 2x, https://ac.goit.global/img/source@3x.jpg 3x"
+/>
+/* 2 */
+
+<img
+  alt="Image description for all versions"
+  src="https://ac.goit.global/img/source.jpg"
+  srcset="https://ac.goit.global/img/source-360.jpg 360w,
+    https://ac.goit.global/img/source-540.jpg 540w,
+    https://ac.goit.global/img/source-720.jpg 720w,
+    https://ac.goit.global/img/source-1080.jpg 1080w,
+    https://ac.goit.global/img/source-1440.jpg 1440w"
+/>
+/* 3 */
+
+</figure>
+<figure class="image-wrapper">
+  <img
+    class="image"
+    alt="Image description for all versions"
+    src="https://ac.goit.global/img/source.jpg"
+    srcset="https://ac.goit.global/img/source-360.jpg 360w,
+      https://ac.goit.global/img/source-540.jpg 540w,
+      https://ac.goit.global/img/source-720.jpg 720w,
+      https://ac.goit.global/img/source-1080.jpg 1080w,
+      https://ac.goit.global/img/source-1440.jpg 1440w"
+    sizes="(max-width: 549px) calc(100vw - 10px),
+         (max-width: 959px) calc(50vw - 20px),
+         (min-width: 960px) calc(70vw - 20px)"
+  />
+  <figcaption class="image-description">
+    Detailed description of the image.
+  </figcaption>
+</figure>
+/* 4 */
+
+<picture>
+  <source
+    media="screen and (orientation: portrait) and (max-width: 549px)"
+    srcset="https://ac.goit.global/img/source-vertical.jpg,
+      https://ac.goit.global/img/source-vertical_2x.jpg 2x"
+  />
+  <source media="screen and (min-width: 550px)" 
+  srcset="https://ac.goit.global/img/source-horizontal.jpg,
+      https://ac.goit.global/img/source-horizontal_2x.jpg 2x" />
+  <source
+    media="screen and (orientation: landscape)"
+    srcset="https://ac.goit.global/img/source-horizontal.jpg,
+      https://ac.goit.global/img/source-horizontal_2x.jpg 2x"
+  />
+  <img
+    src="https://ac.goit.global/img/source.jpg"
+    alt="Image text description"
+  />
+</picture>
+/* 5 */
