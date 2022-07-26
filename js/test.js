@@ -332,51 +332,108 @@
 
 // bookShelf.updateBook('Haze', 'Dungeon chronicles');
 
-const atTheOldToad = {
-  potions: [
-    { name: 'Speed potion', price: 460 },
-    { name: 'Dragon breath', price: 780 },
-    { name: 'Stone skin', price: 520 },
-  ],
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Speed potion', price: 460 },
+//     { name: 'Dragon breath', price: 780 },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+
+//   addPotion(newPotion) {
+//     if (this.potions.includes(newPotion)) {
+//       return `Error! Potion ${newPotion} is already in your inventory!`;
+//     }
+
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     const potionIndex = this.potions.indexOf(potionName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${potionName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1);
+//   },
+//   updatePotionName(oldName, newName) {
+//     const potionIndex = this.potions.indexOf(oldName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${oldName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1, newName);
+//   },
+//   // Change code above this line
+// };
+
+// atTheOldToad.addPotion({ name: 'Stone skin', price: 240 });
+// console.log(atTheOldToad.addPotion);
+
+// // 4 module
+// // 1
+// const result = makePizza();
+// const pointer = makePizza;
+
+// // 2
+
+// const pizzaPalace = {
+//   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+//   order(pizzaName, makePizza, onOrderError) {
+//     for (let i = 0; i < this.pizzas.length; i += 1) {
+//       console.log(this.pizzas[i]);
+//       console.log(`next`);
+
+//       if (pizzaName === this.pizzas[i]) {
+//         makePizza(pizzaName);
+//         return;
+//       }
+//     }
+//     onOrderError(pizzaName);
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order('Smoked', makePizza, onOrderError);
+// pizzaPalace.order('Four meats', makePizza, onOrderError);
+// pizzaPalace.order('Big Mike', makePizza, onOrderError);
+// pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+// console.log(pizzaPalace.pizzas.length);
+// console.log(pizzaPalace.pizzas);
+
+function changeEven(numbers, value) {
   // Change code below this line
-  getPotions() {
-    return this.potions;
-  },
+  const newArray = [];
+  console.log(newArray);
+  for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] % 2 !== 0) {
+      newArray.push(numbers[i]);
 
-  addPotion(newPotion) {
-    if (this.potions.includes(newPotion)) {
-      return `Error! Potion ${newPotion} is already in your inventory!`;
+      console.log(newArray);
+    } else if (numbers[i] % 2 === 0) {
+      newArray.push(numbers[i] + value);
+
+      console.log(newArray);
     }
-
-    this.potions.push(newPotion);
-  },
-  removePotion(potionName) {
-    const potionIndex = this.potions.indexOf(potionName);
-
-    if (potionIndex === -1) {
-      return `Potion ${potionName} is not in inventory!`;
-    }
-
-    this.potions.splice(potionIndex, 1);
-  },
-  updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
-
-    if (potionIndex === -1) {
-      return `Potion ${oldName} is not in inventory!`;
-    }
-
-    this.potions.splice(potionIndex, 1, newName);
-  },
+  }
+  return newArray;
   // Change code above this line
-};
+}
 
-atTheOldToad.addPotion({ name: 'Stone skin', price: 240 });
-console.log(atTheOldToad.addPotion);
-
-// 4 module
-// 1
-const result = makePizza();
-const pointer = makePizza;
-
-// 2
+changeEven([1, 2, 3, 4, 5], 10);

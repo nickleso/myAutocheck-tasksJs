@@ -1255,4 +1255,190 @@ const atTheOldToad = {
     }
   },
   // Change code above this line
+  };
+
+// 4 module
+// 1
+function makePizza() {
+  return "Your pizza is being prepared, please wait.";
+}
+// Change code below this line
+
+const result = makePizza();
+  const pointer = makePizza;
+
+// 2
+function deliverPizza(pizzaName) {
+  return `Delivering ${pizzaName} pizza.`;
+}
+
+function makePizza(pizzaName) {
+  return `Pizza ${pizzaName} is being prepared, please wait...`;
+}
+
+// Chande code below this line
+function makeMessage(pizzaName, callback) {
+  
+  return callback(pizzaName); 
+  
+  }
+
+// 3
+function makePizza(pizzaName, callback) {
+  console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+  callback(pizzaName);
+}
+
+makePizza("Royal Grand", function deliverPizza(pizzaName) {
+  console.log(`Delivering pizza ${pizzaName}.`);
+});
+// Change code below this line
+
+makePizza("Ultracheese", function eatPizza(pizzaName) {
+  console.log(`Eating pizza ${pizzaName}`)
+}); 
+
+// 4
+const pizzaPalace = {
+  pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+  order(pizzaName, onSuccess, onError) {
+    for (let i = 0; i < this.pizzas.length; i += 1) {
+      
+      if (pizzaName === this.pizzas[i]) {
+        onSuccess(pizzaName);
+        console.log(`Your order is accepted. Cooking pizza ${pizzaName}.`)
+        return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+      }
+    }
+   
+   ;
+    return onError(`There is no pizza with a name ${pizzaName} in the   
+    assortment.`) ;
+  },
 };
+// Change code above this line
+
+
+// Callback for onSuccess
+function makePizza(pizzaName) {
+  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+}
+
+// Callback for onError
+function onOrderError(error) {
+  return `Error! ${error}`;
+}
+
+// Method calls with callbacks
+pizzaPalace.order('Smoked', makePizza, onOrderError);
+pizzaPalace.order('Four meats', makePizza, onOrderError);
+pizzaPalace.order('Big Mike', makePizza, onOrderError);
+  pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+// 5
+  let totalPrice = 0;
+  // Change code below this line
+orderedItems.forEach(function (item, index) {
+  totalPrice += item;
+});
+
+  // Change code above this line
+  return totalPrice;
+}
+
+// 6
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
+  // Change code below this line
+  numbers.forEach(function (number, index, numbers) {
+  if (number > value) {
+      filteredNumbers.push(number);}
+}); 
+
+  // Change code above this line
+  return filteredNumbers;
+}
+
+// 7
+function getCommonElements(firstArray, secondArray) {
+  const commonElements = [];
+  // Change code below this line
+  firstArray.forEach(function (number, index, firstArray) { 
+    if (secondArray.includes(number)) {
+      commonElements.push(number);
+    }
+  });
+  
+  return commonElements;
+  // Change code above this line
+}
+
+// 8
+const calculateTotalPrice = (quantity, pricePerItem) => {
+
+  // Change code above this line
+  return quantity * pricePerItem;
+}
+
+// 9
+const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+
+// 10
+const calculateTotalPrice = (orderedItems) => {
+  let totalPrice = 0;
+
+  orderedItems.forEach((item) => {
+    totalPrice += item});
+    return totalPrice;
+}
+ 
+// 11
+const filterArray = (numbers, value) => {
+  const filteredNumbers = [];
+
+  numbers.forEach((number) => {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  });
+
+  // Change code above this line
+  return filteredNumbers;
+}
+
+// 12
+// Change code below this line
+const getCommonElements = (firstArray, secondArray) => {
+  const commonElements = [];
+
+  firstArray.forEach((element) => {
+    if (secondArray.includes(element)) {
+      commonElements.push(element);
+    }
+  });
+
+  // Change code above this line
+  return commonElements;
+}
+
+// 13
+function changeEven(numbers, value) {
+  // Change code below this line
+  const newArray = []
+  for (let i = 0; i < numbers.length; i += 1) {
+
+    if (numbers[i] % 2 !== 0) {
+      newArray.push(numbers[i]);
+      continue;
+    }
+        
+    else if (numbers[i] % 2 === 0) {
+      newArray.push(numbers[i] + value);
+      continue;
+    }
+  }
+  return newArray;
+  // Change code above this line
+}
+
+// 14
