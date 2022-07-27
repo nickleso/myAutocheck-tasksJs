@@ -1442,3 +1442,93 @@ function changeEven(numbers, value) {
 }
 
 // 14
+const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// Change code below this line
+const planetsLengths = planets.map((planet, index, array) => {return planet.length});
+console.log(planetsLengths);
+
+// 15
+const titles = books.map((book, index, array) => { return book.title });
+
+// 16
+const genres = books.flatMap(book => book.genres);
+
+// 17
+const getUserNames = users => users.map((user) => { return user.name });
+
+// 18
+const getUserEmails = users => users.map(user => user.email);
+
+// 19
+const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// Change code below this line
+
+const evenNumbers = numbers.filter((number) => {
+    if (number % 2 === 0) 
+    return number; 
+});
+const oddNumbers = numbers.filter((number) => {
+    if (number % 2 !== 0) 
+    return number
+});
+    
+// 20
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    genres: ["adventure", "history"],
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    genres: ["fiction", "mysticism"],
+  },
+  {
+    title: "Redder Than Blood",
+    author: "Tanith Lee",
+    genres: ["horror", "mysticism", "adventure"],
+  },
+];
+// Change code below this line
+const allGenres = books.flatMap(book => book.genres);
+console.log(allGenres);
+
+const uniqueGenres = allGenres.filter((genre, index, array) => { return array.indexOf(genre) === index });
+
+// 21
+const MIN_RATING = 8;
+const AUTHOR = "Bernard Cornwell";
+// Change code below this line
+
+const topRatedBooks = books.filter(({ rating }) => rating >= MIN_RATING);
+console.log(topRatedBooks);
+
+const booksByAuthor = books.filter(({ author }) => author === AUTHOR);
+console.log(AUTHOR);
+
+// 22
+const getUsersWithEyeColor = (users, color) => {
+  return users.filter((user) => user.eyeColor === color)
+};
+
+// 23
+const getUsersWithAge = (users, minAge, maxAge) => {
+  return users.filter(({ age }) => age >= minAge && age <= maxAge)
+};
+    
+// 24
+const getUsersWithFriend = (users, friendName) => { return users.filter(user => user.friends.includes(friendName)) };
+
+// 25
+const getFriends = (users) => {
+    const allFriends = users.flatMap(user => user.friends);
+    console.log(allFriends);
+   
+   const clearFrinds = allFriends.filter((friend, index, array) => array.indexOf(friend) === index);
+
+   console.log(clearFrinds);
+   return clearFrinds;
+};
+
+// 26
