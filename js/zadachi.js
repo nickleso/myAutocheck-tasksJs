@@ -1532,3 +1532,81 @@ const getFriends = (users) => {
 };
 
 // 26
+const getActiveUsers = (users) => { return users.filter(user => user.isActive)};
+
+// 27
+const getInactiveUsers = (users) => { return users.filter(user => !user.isActive) };
+
+// 28
+const bookWithTitle = books.find((book => book.title === BOOK_TITLE));
+const bookByAuthor = books.find((book => book.author === AUTHOR));
+
+// 29
+const getUserWithEmail = (users, email) => {
+  return users.find((user => user.email === email))
+};
+
+// 30
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change code below this line
+
+const eachElementInFirstIsEven = firstArray.every((element => element % 2 === 0 ));
+const eachElementInFirstIsOdd = firstArray.every((element => element % 2 !== 0 ));
+
+const eachElementInSecondIsEven = secondArray.every((element => element % 2 === 0 ));
+const eachElementInSecondIsOdd = secondArray.every((element => element % 2 !== 0 ));
+
+const eachElementInThirdIsEven = thirdArray.every((element => element % 2 === 0 ));
+const eachElementInThirdIsOdd = thirdArray.every((element => element % 2 !== 0));
+
+// 31
+const isEveryUserActive = (users) => { return users.every((user => user.isActive === true)) };
+
+// 32
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change below this line
+
+const anyElementInFirstIsEven = firstArray.some((number => number % 2 === 0 ));
+const anyElementInFirstIsOdd = firstArray.some((number => number % 2 !== 0 ));
+
+const anyElementInSecondIsEven = secondArray.some((number => number % 2 === 0 ));
+const anyElementInSecondIsOdd = secondArray.some((number => number % 2 !== 0 ));
+
+const anyElementInThirdIsEven = thirdArray.some((number => number % 2 === 0 ));
+const anyElementInThirdIsOdd = thirdArray.some((number => number % 2 !== 0))
+
+// 33
+const isAnyUserActive = users => { return users.some((user => user.isActive === true)) };
+
+// 34
+const players = {
+  mango: 1270,
+  poly: 468,
+  ajax: 710,
+  kiwi: 244
+};
+const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// Change code below this line
+
+const totalPlayTime = playtimes.reduce((playTime, number) => playTime + number);
+
+// Change code above this line
+const averagePlayTime = totalPlayTime / playtimes.length;
+
+// 35
+const players = [
+  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+  { name: "Poly", playtime: 469, gamesPlayed: 2 },
+  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+];
+// Change code below this line
+const totalAveragePlaytimePerGame = players.reduce((total, player) => {return total + player.playtime / player.gamesPlayed }, 0);
+
+console.log(totalAveragePlaytimePerGame);
+
+// 36
