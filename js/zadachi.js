@@ -1610,3 +1610,144 @@ const totalAveragePlaytimePerGame = players.reduce((total, player) => {return to
 console.log(totalAveragePlaytimePerGame);
 
 // 36
+// Change code below this line
+const calculateTotalBalance = users => 
+   users.reduce((total, user) => {return total + user.balance}, 0)
+  ;
+
+// 37
+const getTotalFriendCount = users => users.reduce((totalFriends, user) => [...totalFriends, ...user.friends], []).length;
+
+// 38
+const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+const authors = [
+  "Tanith Lee",
+  "Bernard Cornwell",
+  "Robert Sheckley",
+  "Fyodor Dostoevsky",
+];
+// Change code below this line
+
+const ascendingReleaseDates = [...releaseDates].sort();
+
+const alphabeticalAuthors = [...authors].sort();
+
+// 39
+const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// Change code below this line
+
+const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// 40
+const authors = [
+  "Tanith Lee",
+  "Bernard Cornwell",
+  "Robert Sheckley",
+  "Fyodor Dostoevsky",
+  "Howard Lovecraft",
+];
+// Change code below this line
+
+const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+
+const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+// 41
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+];
+// Change code below this line
+
+const sortedByAuthorName = [...books].sort((firstAuthor, secondAuthor) => firstAuthor.author.localeCompare(secondAuthor.author));
+
+const sortedByReversedAuthorName = [...books].sort((firstAuthor, secondAuthor) => secondAuthor.author.localeCompare(firstAuthor.author));
+
+const sortedByAscendingRating = [...books].sort((a, b) => a.rating - b.rating);
+
+const sortedByDescentingRating = [...books].sort((a, b) => b.rating - a.rating);
+
+// 42
+const sortByAscendingBalance = users => {return [...users].sort((lowerBalance, higherBalance) => lowerBalance.balance - higherBalance)
+};
+
+// 43
+const sortByDescendingFriendCount = users => {return [...users].sort((lessFriends, moreFriends) => moreFriends.friends.localeCompare(lessFriends.friends))
+   
+};
+
+// 43
+const sortByDescendingFriendCount = users => { return [...users].sort((first, second) => second.friends.length - first.friends.length) };
+
+// 44
+const sortByName = users => {return [...users].sort((nameFirst, nameLast) => nameFirst.name.localeCompare(nameLast.name))
+};
+
+// 45
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  {
+    title: "The Dreams in the Witch House",
+    author: "Howard Lovecraft",
+    rating: 8.67,
+  },
+];
+const MIN_BOOK_RATING = 8;
+// Change code below this line
+
+const names = [...books]
+  .filter(book => book.rating >= MIN_BOOK_RATING)
+  .map(book => book.author)
+  .sort((a, b) => a.localeCompare(b));
+
+// 46
+const getNamesSortedByFriendCount = users => {return [...users]
+.sort((a, b) => a.friends.length - b.friends.length)
+.map(user => user.name)
+};
+
+// 47
+const getSortedFriends = users => {return [...users]
+.flatMap(user => user.friends)
+.filter((friend, index, array) => array.indexOf(friend) === index)
+.sort((a, b) => a.localeCompare(b))
+};
+
+// 48
+const getTotalBalanceByGender = (users, gender) => {return [...users]
+.filter(user => user.gender === gender)
+.reduce((total, user) => total + user.balance, 0)
+};
+
