@@ -417,23 +417,56 @@
 // console.log(pizzaPalace.pizzas.length);
 // console.log(pizzaPalace.pizzas);
 
-function changeEven(numbers, value) {
-  // Change code below this line
-  const newArray = [];
-  console.log(newArray);
-  for (let i = 0; i < numbers.length; i += 1) {
-    if (numbers[i] % 2 !== 0) {
-      newArray.push(numbers[i]);
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArray = [];
+//   console.log(newArray);
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 !== 0) {
+//       newArray.push(numbers[i]);
 
-      console.log(newArray);
-    } else if (numbers[i] % 2 === 0) {
-      newArray.push(numbers[i] + value);
+//       console.log(newArray);
+//     } else if (numbers[i] % 2 === 0) {
+//       newArray.push(numbers[i] + value);
 
-      console.log(newArray);
-    }
+//       console.log(newArray);
+//     }
+//   }
+//   return newArray;
+//   // Change code above this line
+// }
+
+// changeEven([1, 2, 3, 4, 5], 10);
+
+class Storage {
+  constructor(items) {
+    this.items = items;
   }
-  return newArray;
-  // Change code above this line
+
+  getItems() {
+    return this.items;
+  }
+
+  addItem(newItem) {
+    this.items.push(newItem);
+  }
+
+  removeItem(itemToRemove) {
+    this.items.reduce((allItems, robot) => {
+      console.log(robot);
+
+      if (itemToRemove !== robot) allItems.push(robot);
+
+      console.log(allItems);
+      return allItems;
+    }, []);
+  }
 }
 
-changeEven([1, 2, 3, 4, 5], 10);
+// Change code above this line
+const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem('Droid');
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem('Prolonger');
+console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
